@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Berlin Analytics - Products</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>BERLIN ANALYTICS</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart (<span id="cart-count">0</span>)</a>
+        </nav>
+    </header>
+    <main>
+        <section class="products">
+            <h2>All Products</h2>
+            <div class="product-grid" id="product-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2026 Berlin Analytics. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+        // Display all products on products page
+        document.addEventListener("DOMContentLoaded", function() {
+            updateCartCount();
+            displayProducts();
+        });
+    </script>
+</body>
+</html>
